@@ -44,6 +44,17 @@ table {
 }
 
 @charset "utf-8";
+
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:15px;
+    height:15px;
+    background:white;
+}
+input[type='checkbox']:checked {
+    background: #abd;
+}
+
 #navbar {
 	margin: 0;
 	padding: 0;
