@@ -90,7 +90,8 @@ padding:0;
 	text-align: left;
 }
 #contentText2 {
-	text-align: right;
+	text-align: left;
+	float: left;
 }
 #navText  {
 	font-size: 22px;
