@@ -1,0 +1,174 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+
+/*
+    Actual CSS starts here
+*/
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.site_content {
+    display: flex;
+    min-height: 100vh;
+}
+
+body {
+    color: white;
+    background-color: white;
+}
+.site_content {
+    display: flex;
+    justify-content: space-between;
+}
+.sidebar {
+    width: 20%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #232628;
+    background: linear-gradient(#232628, #1E2021);
+    padding-top: 15%;
+    overflow: hidden;
+    margin-bottom: -450px;
+    padding-bottom: 450px;
+}
+#profile_pic {
+    width: 50%;
+    border-radius: 100%;
+}
+#sidebar_info {
+    padding: 5px;
+    font-family: "Arial Rounded MT Bold";
+    font-size: 16pt;
+}
+#sidebar_contact_info {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 12pt;
+    text-align: left;
+    color: #949494;
+}
+.site_buttons {
+    padding-top: 20px;
+    font-family: "Arial";
+    font-size: 14pt;
+}
+.content {
+    width: 80%;
+    text-overflow: fade;
+    overflow: hidden;
+    font-family: "Arial";
+    font-size: 16pt;
+    background-color: #191B1C;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -450px;
+    padding-bottom: 450px;
+}
+.content div {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.site_article {
+    margin: 15px;
+    margin-left: 30px;
+    margin-right: 80px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #33373A;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.15);
+}
+a {
+    text-decoration: none;
+    color: white;
+}
+a:hover {
+    color: deepskyblue;
+}
+a:visited {
+    color: deepskyblue;
+}
+.site_article_image {
+    display: flex;
+    width: 25%;
+    border-radius: 5px
+}
+.site_article p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+li {
+    margin-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+h2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.home_button {
+    vertical-align: middle;
+    opacity: 80%;
+    padding-right: 5px;
+}
+.site_buttons a {
+    padding: 5px;
+    vertical-align: middle;
+}
+.site_buttons img {
+    padding: 5px;
+}
+
+ol {
+    padding-left: 10px;
+    list-style-type: decimal;
+}

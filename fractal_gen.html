@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Dec0de.net</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="site_content">
+            <div class="sidebar">
+                <img id="profile_pic" src="img/profile_pic.png">
+                <p id="sidebar_info" content="width=device-width, user-scalable=no">
+                    Kyle Wilcox
+                </p>
+                <p id="sidebar_contact_info">@DEC0DE</p>
+                <div class="site_buttons">
+                    <img src="img/home-icon.png" class="home_button" width="20px" height="20px">
+                    <a href="index.html">Home</a><br>
+                    <img src="img/contact-img.png" class="home_button" width="20px" height="20px">
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
+            <div class="content">
+                <div class="site_article">
+                    <h1 style="font-size: 32px">Sierpinski Triangle Generator</h1>
+                    <br>
+                    <img src="img/sier_tri_pic.jpg" style="border-radius: 8px; width: 50%; overflow: hidden">
+                    <header><h2 style="font-size: 28px">A Game of Chaos</h2></header><hr>
+
+                    <p>This project was inspired by Numberphile's video on Chaos Games</p>
+                    <iframe width="660" height="415" src="https://www.youtube.com/embed/kbKtFN71Lfs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                    <header><h2 style="font-size: 28px">Generator</h2></header><hr>
+                    <p>Here you can see how the generator works, give it some time to populate
+                    the area with points. If you want to reset the game just use left click.</p>
+                    <br><iframe src="https://openprocessing.org/sketch/1215542/embed/" width="80%" height="700"></iframe>
+
+                    <header><h2 style="font-size: 28px">The Rules</h2></header><hr>
+                    <p>
+                        <ol>
+                            <li>Start by creating three random points A, B and, C</li>
+                            <li>Draw a random point inside the triangle, this will be your starting point</li>
+                            <li>In order to play the game you'll base where you draw your dot by rolling a
+                            six sided die. If the die
+                                <ul>
+                                    <li>If the die rolls a 1 or 2, start at A</li>
+                                    <li>If the die rolls a 3 or 4, start at B</li>
+                                    <li>If the die rolls a 5 or 6, start at C</li>
+                                </ul>
+                            </li>
+                            <li>After determining your letter point, draw a line from the letter point to the starting point you placed earlier and put a dot in the middle of that line</li>
+                            <li>Roll the die again, then draw a line from your latest point to the rolled letter point and place another dot on the midpoint</li>
+                            <li>Repeat steps 4 and 5 until you feel you have populated the whole triangle with dots</li>
+                        </ol>
+                    <br>
+                    As you can see, this game ends up creating the classic Sierpinski Triangle fractal.
+                    </p>
+
+                    <header><h2 style="font-size: 28px">Code</h2></header><hr>
+                    <p>Here is the code to the project, following the mentioned steps above. This project uses the Processing library
+                    which you'll need if you'd like to run this in your own environment.</p>
+                    <script src="https://gist.github.com/theDec0de/243edae9e2d68af3f3147160d88ebbaf.js"></script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
